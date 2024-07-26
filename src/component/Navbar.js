@@ -25,11 +25,11 @@ const Navbar = () => {
 
     const search = (event) => {
         if (event.key === 'Enter') {
-            console.log('We Click This Key :', event.key);
+            // console.log('We Click This Key :', event.key);
             // 입력한 검색어를 읽어와서
             let keyword = event.target.value;
             // url을 바꿔준다.
-            navigate(`/q=${keyword}`)
+            navigate(`/?q=${keyword}`)
         }
     }
 
