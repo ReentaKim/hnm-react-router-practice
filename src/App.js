@@ -5,7 +5,7 @@ import LoginPage from "./page/LoginPage";
 import ProductDetail from "./page/ProductDetail";
 import Navbar from "./component/Navbar";
 import {useEffect, useState} from "react";
-
+import PrivateRoute from "./route/PrivateRoute";
 
 // 1. 전체 상품 페이지, 로그인, 상품상세페이지
 // 1-1. 네비게이션 바를 생성한다. https://docs.fontawesome.com/v5/web/use-with/react/
@@ -28,7 +28,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<ProductAll/>}/>
                 <Route path="/login" element={<LoginPage setAuthenticate={setAuthenticate}/>}/>
-                <Route path="/product/:id" element={<ProductDetail/>}/>
+                <Route path="/product/:id" element={<PrivateRoute authenticate={authenticate}/>}/>
             </Routes>
         </div>
     );

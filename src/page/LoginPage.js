@@ -5,7 +5,6 @@ import {useNavigate} from "react-router-dom";
 const LoginPage = ({setAuthenticate}) => {
     const navigate = useNavigate()
 
-
     const loginUser = (event) => {
         event.preventDefault();
         console.log('login user function issue');
