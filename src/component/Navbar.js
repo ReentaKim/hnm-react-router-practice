@@ -5,7 +5,6 @@ import {faSearch} from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from "react-router-dom";
 
 
-
 const Navbar = () => {
     const menuList = [
         '여성',
@@ -20,15 +19,25 @@ const Navbar = () => {
 
     const navigate = useNavigate();
 
-    const goToLogin =() => {
+    const goToLogin = () => {
         navigate('/login');
+    }
+
+    const search = (event) => {
+        if (event.key === 'Enter') {
+            console.log('We Click This Key :', event.key);
+            // 입력한 검색어를 읽어와서
+            let keyword = event.target.value;
+            // url을 바꿔준다.
+            navigate(`/q=${keyword}`)
+        }
     }
 
     return (
         <div>
             <div>
-                <div className={'login-button'} >
-                    <FontAwesomeIcon icon={faUser} onClick={goToLogin} />
+                <div className={'login-button'}>
+                    <FontAwesomeIcon icon={faUser} onClick={goToLogin}/>
                     <div onClick={goToLogin}>로그인</div>
                 </div>
 
@@ -44,8 +53,9 @@ const Navbar = () => {
                     ))}
                 </ul>
                 <div className="search-container">
-                    <FontAwesomeIcon icon={faSearch} className="search-icon" />
-                    <input type="text" placeholder="제품검색" className="search-input"/>
+                    <FontAwesomeIcon icon={faSearch} className="search-icon"/>
+                    <input type="text" placeholder="제품검색" className="search-input"
+                           onKeyDown={(event) => search(event)}/>
                 </div>
             </div>
         </div>
