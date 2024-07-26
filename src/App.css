@@ -1,0 +1,45 @@
+.login-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-list{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-list li{
+    padding: 10px;
+}
+
+.menu-area {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    position: relative;
+    margin-right: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    transform: translateY(-50%);
+    color: #777;
+}
+
+.search-input {
+    padding: 5px 10px 5px 30px;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+    width: 120px;
+}
