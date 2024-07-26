@@ -2,7 +2,6 @@ import './App.css';
 import {Route, Routes} from "react-router-dom";
 import ProductAll from "./page/ProductAll";
 import LoginPage from "./page/LoginPage";
-import ProductDetail from "./page/ProductDetail";
 import Navbar from "./component/Navbar";
 import {useEffect, useState} from "react";
 import PrivateRoute from "./route/PrivateRoute";

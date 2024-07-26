@@ -3,7 +3,6 @@
     justify-content: flex-end;
     margin: 20px;
     cursor: pointer;
-
 }
 
 .nav-section {
@@ -11,12 +10,12 @@
     justify-content: center;
 }
 
-.menu-list{
+.menu-list {
     display: flex;
     list-style-type: none;
 }
 
-.menu-list li{
+.menu-list li {
     padding: 10px;
 }
 
@@ -46,9 +45,21 @@
     width: 120px;
 }
 
-.cloth-img{
+.cloth-img {
     width: 250px;
 }
-.cloth-img:hover{
-    width: 280px;
+
+.new-product {
+    font-size: 11px;
+    height: 20px;
+}
+
+.cloth-img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.product-img {
+    display: flex;
+    justify-content: flex-end;
 }

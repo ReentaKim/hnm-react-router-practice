@@ -27,9 +27,9 @@ const Navbar = () => {
     return (
         <div>
             <div>
-                <div className={'login-button'} onClick={goToLogin}>
-                    <FontAwesomeIcon icon={faUser}/>
-                    <div>로그인</div>
+                <div className={'login-button'} >
+                    <FontAwesomeIcon icon={faUser} onClick={goToLogin} />
+                    <div onClick={goToLogin}>로그인</div>
                 </div>
 
             </div>
