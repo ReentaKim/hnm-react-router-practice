@@ -43,3 +43,10 @@
     font-size: 14px;
     width: 120px;
 }
+
+.cloth-img{
+    width: 250px;
+}
+.cloth-img:hover{
+    width: 280px;
+}
